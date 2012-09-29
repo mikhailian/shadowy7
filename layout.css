@@ -76,6 +76,61 @@
   }
 }
 
+/* now, we are done with layout, doing design */
 .section {
   margin: 10px;
 }
+
+#sidebar-first {
+  text-align:right;
+}
+
+#logo {
+  float:left
+}
+
+h1, h2 {
+  font-family: 'Ubuntu', sans-serif;
+  color:#444;
+}
+
+a:link {
+  color:#B72222;
+  text-decoration: none;
+}
+
+a:visited {
+  color:#B72222;
+}
+
+a:hover {
+  color:#B72222;
+  text-decoration: underline;
+}
+
+.item-list ul {
+  list-style-type:none;
+  list-style-position: inside;
+}
+
+#block-forum-new .item-list ul li:before {
+	content: "\2605 \00A0";
+        color: #B72222;
+	}
+
+ul.pager {
+  font-size: smaller;
+}
+
+ul.links.inline {
+ font-size:smaller; 
+}
+.poll .bar .foreground {
+  background-color:#B72222;
+}
+
+#navigation {
+  text-align:center;
+  font-size:smaller;
+}
+
