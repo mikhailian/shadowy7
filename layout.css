@@ -77,38 +77,29 @@
 }
 
 /* now, we are done with layout, doing design */
-
  
+/* major structural elements */
 #sidebar-first {
   text-align:right;
 }
 
-#content .section  {
-  margin-right:0.17em;
-  margin-left:0.17em;
-  padding-left:0.83em;
-  padding-right:0.83em;
 
-  border: solid 1px #CCC;
-  -webkit-box-shadow: 3px 3px 4px #CCC;
-  -moz-box-shadow: 3px 3px 4px #ccc;
-  box-shadow: 3px 3px 4px #CCC;
-}
 #sidebar-first .section {
-  margin-right:0.17em;
   padding-left:0.83em;
   padding-right:0.17em;
 }
 
 #sidebar-second .section {
-  margin-left:0.17em;
   padding-left:0.17em;
   padding-right:0.83em;
 }
 
-
 #logo {
   float:left
+}
+
+p {
+  text-align:justify;
 }
 
 h1, h2 {
@@ -116,6 +107,7 @@ h1, h2 {
   color:#444;
 }
 
+/* links */
 a:link {
   color:#B72222;
   text-decoration: none;
@@ -128,6 +120,30 @@ a:visited {
 a:hover {
   color:#B72222;
   text-decoration: underline;
+}
+
+/* #navigation */
+
+#navigation {
+  text-align:center;
+  font-size:small;
+}
+
+/* copied from .element-invisible */
+#navigation h2 {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* misc*/
+
+.poll .bar .foreground {
+  background-color:#B72222;
+}
+
+.submitted {
+ font-size:small;
 }
 
 .item-list ul {
@@ -145,29 +161,18 @@ ul.pager {
 }
 
 ul.links.inline {
- font-size:smaller; 
-}
-.poll .bar .foreground {
-  background-color:#B72222;
+ font-size:small; 
 }
 
-#navigation {
-  text-align:center;
-  font-size:smaller;
+.node {
+  border: solid 1px #CCC;
+  -webkit-box-shadow: 3px 3px 4px #CCC;
+  -moz-box-shadow: 3px 3px 4px #ccc;
+  box-shadow: 3px 3px 4px #CCC;
+  padding: 0.83em;
+  margin: 0.83em;
 }
 
-.submitted {
- font-size:smaller;
+th {
+  border-bottom: 1px solid #CCC;
 }
-
-/* copied from .element-invisible */
-#navigation h2 {
-  position: absolute !important;
-  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-  clip: rect(1px, 1px, 1px, 1px);
-}
-
-p {
-  text-align:justify;
-}
-
