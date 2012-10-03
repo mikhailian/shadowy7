@@ -1,0 +1,14 @@
+name = Shadowy 7
+description = Russian-Belgium theme for Drupal 7
+core = 7.x
+engine = phptemplate
+stylesheets[all][] = normalize.css
+stylesheets[all][] = html-elements.css
+stylesheets[all][] = layout.css
+stylesheets[all][] = forum.css
+
+version = "7.x-1.0-dev"
+core = "7.x"
+project = "shadowy7"
+datestamp = "1320130853"
+
