@@ -25,22 +25,70 @@
   }
 }
 
-@media all and (min-width: 480px) and (max-width: 959px) {
+@media all and (min-width: 480px) and (max-width: 659px) {
   body.sidebar-first #content,
   body.two-sidebars #content {
-    width: 67%;
+    width: 70%;
     float: right; /* LTR */
   }
   body.sidebar-second #content {
-    width: 67%;
+    width: 30%;
   }
 
   #sidebar-first {
-    width: 33%;
+    width: 30%;
   }
 
   #sidebar-second {
-    width: 33%;
+    width: 30%;
+    float: right; /* LTR */
+  }
+  body.two-sidebars #sidebar-second {
+    float: left; /* LTR */
+    clear: left; /* LTR */
+  }
+}
+
+@media all and (min-width: 660px) and (max-width: 819px) {
+  body.sidebar-first #content,
+  body.two-sidebars #content {
+    width: 75%;
+    float: right; /* LTR */
+  }
+  body.sidebar-second #content {
+    width: 25%;
+  }
+
+  #sidebar-first {
+    width: 25%;
+  }
+
+  #sidebar-second {
+    width: 25%;
+    float: right; /* LTR */
+  }
+  body.two-sidebars #sidebar-second {
+    float: left; /* LTR */
+    clear: left; /* LTR */
+  }
+}
+
+@media all and (min-width: 820px) and (max-width: 959px) {
+  body.sidebar-first #content,
+  body.two-sidebars #content {
+    width: 80%;
+    float: right; /* LTR */
+  }
+  body.sidebar-second #content {
+    width: 20%;
+  }
+
+  #sidebar-first {
+    width: 20%;
+  }
+
+  #sidebar-second {
+    width: 20%;
     float: right; /* LTR */
   }
   body.two-sidebars #sidebar-second {
@@ -154,6 +202,12 @@ a:hover {
   color: #444;
 }
 
+.block-poll .links {
+  float: right;
+  list-style-type: none;
+  font-size:small;
+}
+
 .more-link, .submitted, ul.links.inline, ul.pager {
  font-size:small;
 }
@@ -163,11 +217,18 @@ a:hover {
   list-style-position: inside;
 }
 
-.date-display-single {
+.node .date-display-single {
   float: right;
   color: #B72222;
   font-family: Impact, sans-serif;
   font-size: large;
+}
+
+.block .date-display-single {
+  float: left;
+  color: #B72222;
+  font-family: Impact, sans-serif;
+  padding-right: 0.5em;
 }
 
 .field-type-taxonomy-term-reference {
@@ -196,7 +257,8 @@ ul.menu {
 /*  font-family: Ubuntu;*/
   font-size: small;
   line-height: 150%;
-  padding-left:1em;
+  margin-left:1em;
+
 }
 
 #block-forum-new .item-list ul li:before {
