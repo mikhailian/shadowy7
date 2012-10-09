@@ -247,13 +247,18 @@ ul.menu {
         color: #B72222;
 	}
 
-.node {
+.node-teaser, .comment, .field-name-body {
   border: solid 1px #CCC;
   -webkit-box-shadow: 3px 3px 4px #CCC;
   -moz-box-shadow: 3px 3px 4px #ccc;
   box-shadow: 3px 3px 4px #CCC;
   padding: 0.83em;
   margin: 0.83em;
+}
+
+
+.node {
+  padding:0 1em 0 1em;
 }
 
 /* forum */
@@ -265,4 +270,5 @@ th, thead th, tbody th  {
   font-size:large;
   font-weight: bold;
 }
-}
+
+
