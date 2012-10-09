@@ -61,8 +61,7 @@
         <td class="topics">
           <?php print $forum->num_topics ?>
           <?php if ($forum->new_topics): ?>
-            <br />
-            <a href="<?php print $forum->new_url; ?>"><?php print $forum->new_text; ?></a>
+            <sup><a href="<?php print $forum->new_url; ?>">+<?php print $forum->new_topics; ?></a></sup>
           <?php endif; ?>
         </td>
         <td class="posts"><?php print $forum->num_posts ?></td>

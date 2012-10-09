@@ -25,102 +25,61 @@
   }
 }
 
-@media all and (min-width: 480px) and (max-width: 659px) {
-  body.sidebar-first #content,
-  body.two-sidebars #content {
-    width: 70%;
-    float: right; /* LTR */
-  }
-  body.sidebar-second #content {
-    width: 30%;
+@media all and (min-width: 480px) and (max-width: 719px) {
+  #main {
+    padding-left:160px;
   }
 
   #sidebar-first {
-    width: 30%;
+    width: 160px;
+    float:left;
+    margin-left: -160px;
   }
 
   #sidebar-second {
-    width: 30%;
-    float: right; /* LTR */
+    width: 160px;
+    margin-left: -160px;
+    clear:left;
   }
-  body.two-sidebars #sidebar-second {
-    float: left; /* LTR */
-    clear: left; /* LTR */
+
+  #content {
+    float:right;
+  }
+
+  #footer {
+    clear: both;
   }
 }
 
-@media all and (min-width: 660px) and (max-width: 819px) {
-  body.sidebar-first #content,
-  body.two-sidebars #content {
-    width: 75%;
-    float: right; /* LTR */
+
+@media all and (min-width: 720px) {
+  #main {
+    padding-left: 160px;   /* LC width */
+    padding-right: 160px;  /* RC width */
   }
-  body.sidebar-second #content {
-    width: 25%;
+
+  #main .column {
+    position: relative;
+    float: left;
+  }
+
+  #content {
+    width: 100%;
   }
 
   #sidebar-first {
-    width: 25%;
+    width: 160px;          /* LC width */
+    right: 160px;          /* LC width */
+    margin-left: -100%;
   }
 
   #sidebar-second {
-    width: 25%;
-    float: right; /* LTR */
-  }
-  body.two-sidebars #sidebar-second {
-    float: left; /* LTR */
-    clear: left; /* LTR */
-  }
-}
-
-@media all and (min-width: 820px) and (max-width: 959px) {
-  body.sidebar-first #content,
-  body.two-sidebars #content {
-    width: 80%;
-    float: right; /* LTR */
-  }
-  body.sidebar-second #content {
-    width: 20%;
+    width: 160px;          /* RC width */
+    margin-right: -160px;  /* RC width */
   }
 
-  #sidebar-first {
-    width: 20%;
-  }
-
-  #sidebar-second {
-    width: 20%;
-    float: right; /* LTR */
-  }
-  body.two-sidebars #sidebar-second {
-    float: left; /* LTR */
-    clear: left; /* LTR */
-  }
-}
-
-@media all and (min-width: 960px) {
-  body.sidebar-first #content {
-    width: 84%;
-    left: 16%; /* LTR */
-  }
-  body.sidebar-second #content {
-    width: 84%;
-  }
-  body.two-sidebars #content {
-    width: 64%;
-    left: 16%; /* LTR */
-  }
-
-  #sidebar-first {
-    width: 16%;
-    left: -84%; /* LTR */
-  }
-  body.two-sidebars #sidebar-first {
-    left: -64%; /* LTR */
-  }
-
-  #sidebar-second {
-    float: right; /* LTR */
-    width: 20%;
+  #footer {
+    clear: both;
   }
 }
 
@@ -128,7 +87,7 @@
  
 /* major structural elements */
 #sidebar-first {
-  text-align:right;
+  text-align:center;
 }
 
 
@@ -173,6 +132,29 @@ a:visited {
 a:hover {
   color:#B72222;
   text-decoration: underline;
+}
+
+/* overrides system.menus.css */
+ul, ul.menu {
+ margin-left:0.5em;
+}
+
+ul.li, ul.menu li {
+  color: #B72222;
+  margin-left: -0.83em;
+}
+
+ul li.expanded {
+  list-style-image: none;
+  list-style-type: circle;
+}
+ul li.collapsed {
+  list-style-image: none;
+  list-style-type: disc;
+}
+ul li.leaf {
+  list-style-image: none;
+  list-style-type: square;
 }
 
 /* #navigation */
@@ -244,12 +226,13 @@ a:hover {
   padding-bottom:0.17em;
 }
 
-#block-forum-new ul {
+#block-forum-new .item-list ul {
   font-weight: bold;
 /*  font-family: Ubuntu;*/
   font-size: small;
   line-height: 150%;
-  padding-right:1em;
+  text-align:left;
+  padding: 0.83em;
 }
 
 ul.menu {
@@ -257,8 +240,6 @@ ul.menu {
 /*  font-family: Ubuntu;*/
   font-size: small;
   line-height: 150%;
-  margin-left:1em;
-
 }
 
 #block-forum-new .item-list ul li:before {
@@ -275,6 +256,13 @@ ul.menu {
   margin: 0.83em;
 }
 
-th {
-  border-bottom: 1px solid #CCC;
+/* forum */
+th, thead th, tbody th  {
+  padding: 0 0.83em 0 0.83em;
+}
+
+.forum .name {
+  font-size:large;
+  font-weight: bold;
+}
 }
