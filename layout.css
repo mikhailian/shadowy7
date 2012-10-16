@@ -92,13 +92,11 @@
 
 
 #sidebar-first .section {
-  padding-left:0.83em;
-  padding-right:0.17em;
+  padding-left: 10px;
 }
 
 #sidebar-second .section {
-  padding-left:0.17em;
-  padding-right:0.83em;
+  padding-right:10px;
 }
 
 #logo {
@@ -109,14 +107,11 @@ p {
   text-align:justify;
 }
 
-/*h1, h2 {
-  font-family: 'Ubuntu', sans-serif;
-  color:#444;
-}*/
-
 h1, h2 {
-  margin: 0.17em;
-  color:#444;
+  font-size: 1.6em;
+  margin: 0.17em 1em 0.17em 1em;
+  color:#666;
+  text-align:justify;
 }
 
 /* links */
@@ -141,7 +136,7 @@ ul, ul.menu {
 
 ul.li, ul.menu li {
   color: #B72222;
-  margin-left: -0.83em;
+  margin-left: -1.83em;
 }
 
 ul li.expanded {
@@ -235,6 +230,10 @@ ul li.leaf {
   padding: 0.83em;
 }
 
+#block-forum-new .item-list ul li {
+  margin:0;
+}
+
 ul.menu {
   font-weight: bold;
 /*  font-family: Ubuntu;*/
@@ -247,23 +246,36 @@ ul.menu {
         color: #B72222;
 	}
 
-.node-teaser, .comment, .field-name-body {
+.node-wrapper, .comment {
   border: solid 1px #CCC;
   -webkit-box-shadow: 3px 3px 4px #CCC;
   -moz-box-shadow: 3px 3px 4px #ccc;
   box-shadow: 3px 3px 4px #CCC;
   padding: 0.83em;
-  margin: 0.83em;
+  margin-bottom:0.83em;
 }
 
 
-.node {
+#content .section {
   padding:0 1em 0 1em;
 }
 
 /* forum */
-th, thead th, tbody th  {
-  padding: 0 0.83em 0 0.83em;
+#forum table{
+  width:100%;
+}
+#forum th, #forum thead th, #forum tbody th  {
+  padding-top: 1em;
+  padding-bottom:1em;
+  background-color: #ccc;
+  padding:0.34em 0.34em 0.17em 0.34em;
+  border-right: solid 1px white;
+  border-left: solid 1px white;
+}
+
+#forum td{
+  padding-top: 1em;
+  padding-bottom:1em;
 }
 
 .forum .name {
@@ -271,4 +283,43 @@ th, thead th, tbody th  {
   font-weight: bold;
 }
 
+.user-picture {
+  float:right;
+  padding-left: 0.83em;
+}
 
+/* remove underline from primary links menu */
+ul.primary {
+  border-bottom:none;
+  margin: 5px 5px 0 5px;
+}
+
+/* action links are inline */
+ul.action-links {
+  display: inline;
+  padding-left: 0;
+}
+
+ul.action-links li{
+  display: inline;
+  list-style-type: none;
+  padding: 0 0.5em;
+  font-size:small;
+}
+
+.new-topics, .last-reply {
+  vertical-align:super;
+  font-size:smaller;
+}
+
+.user-signature {
+  font-size:smaller;
+  font-style:italic;
+}
+
+.comment ul.links {
+  font-size:smaller;
+  float:right;
+  margin:0
+  
+}
