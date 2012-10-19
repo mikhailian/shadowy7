@@ -108,7 +108,7 @@ p {
 }
 
 h1, h2 {
-  font-size: 1.6em;
+  font-size: 1.333em;
   margin: 0.17em 1em 0.17em 1em;
   color:#666;
   text-align:justify;
@@ -208,11 +208,12 @@ ul li.leaf {
   padding-right: 0.5em;
 }
 
-.field-type-taxonomy-term-reference {
+.node .field-type-taxonomy-term-reference {
   float: right;
   font-size: small;
   padding-right: 2em;
 }
+
 
 /* blocks*/
 #block-forum-new .content, #block-system-navigation .content {
