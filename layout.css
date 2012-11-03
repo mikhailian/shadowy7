@@ -262,7 +262,7 @@ ul.menu {
 }
 
 /* forum */
-#forum table{
+#forum table {
   width:100%;
 }
 #forum th, #forum thead th, #forum tbody th  {
@@ -324,3 +324,18 @@ ul.action-links li{
   margin:0
   
 }
+
+.privatemsg-list {
+  width:100%;
+}
+
+/* node edit form */
+#edit-title {
+  width:100%;
+}
+
+.form-actions input {
+  margin-right:0.83em;
+}
+
+
