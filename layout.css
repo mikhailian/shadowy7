@@ -195,7 +195,6 @@ ul li.leaf {
 }
 
 .item-list ul {
-  list-style-type:none;
   list-style-position: inside;
 }
 
@@ -237,6 +236,15 @@ ul li.leaf {
 
 #block-forum-new .item-list ul li {
   margin:0;
+  color: #B72222;
+}
+
+#block-user-online ul {
+  text-align:left;
+}
+
+#block-user-online ul li{
+  margin:0;
 }
 
 ul.menu {
@@ -245,11 +253,6 @@ ul.menu {
   font-size: small;
   line-height: 150%;
 }
-
-#block-forum-new .item-list ul li:before {
-	content: "\2605 \00A0";
-        color: #B72222;
-	}
 
 .node-wrapper, .comment {
   border: solid 1px #CCC;
