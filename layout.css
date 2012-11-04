@@ -81,10 +81,15 @@
   #footer {
     clear: both;
   }
+
+  /*** IE Fix ***/
+  * html #left {
+    #sidebar-first: 160px;           /* RC fullwidth */
+  }
 }
 
 /* now, we are done with layout, doing design */
- 
+
 /* major structural elements */
 #sidebar-first {
   text-align:center;
@@ -322,7 +327,7 @@ ul.action-links li{
   font-size:smaller;
   float:right;
   margin:0
-  
+
 }
 
 .privatemsg-list {
@@ -338,4 +343,15 @@ ul.action-links li{
   margin-right:0.83em;
 }
 
+.administrator, .administrator:link, .administrator:hover, .administrator:visited {
+  color:#ff0000;
+}
+
+.node-moderator, .node-moderator:link, .node-moderator:hover, .node-moderator:visited {
+  color:#b96e22;
+}
+
+.forum-moderator, .forum-moderator:link, .forum-moderator:hover, .forum-moderator:visited {
+  color:#b922b9;
+}
 
