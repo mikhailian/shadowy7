@@ -180,7 +180,6 @@ ul li.leaf {
 .poll .title {
   margin: 0.17em;
   font-weight: bold;
-  font-size: 1.5em;
   color: #444;
 }
 
@@ -226,25 +225,17 @@ ul li.leaf {
 }
 
 #block-forum-new .item-list ul {
-  font-weight: bold;
-/*  font-family: Ubuntu;*/
-  font-size: small;
-  line-height: 150%;
-  text-align:left;
   padding: 0.83em;
 }
 
-#block-forum-new .item-list ul li {
-  margin:0;
-  color: #B72222;
-}
-
-#block-user-online ul {
+.block .item-list ul {
+  line-height: 150%;
   text-align:left;
 }
 
-#block-user-online ul li{
+.block .item-list ul li {
   margin:0;
+  color: #B72222;
 }
 
 ul.menu {
