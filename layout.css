@@ -1,4 +1,4 @@
-/**
+**
  * @file
  * Stark layout method
  *
@@ -353,5 +353,22 @@ ul.action-links li{
 
 .forum-moderator, .forum-moderator:link, .forum-moderator:hover, .forum-moderator:visited {
   color:#b922b9;
+}
+
+.field-name-field-image {
+  float:right;
+}
+
+.block-locale {
+  position:absolute !important;
+  top:0;
+  right:0;
+}
+
+
+.block-locale .content ul li {
+    list-style-type: none;
+    padding: 0 2px;
+    display:inline;
 }
 
