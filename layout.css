@@ -114,7 +114,7 @@ p {
 
 h1, h2 {
   font-size: 1.333em;
-  margin: 0.17em 1em 0.17em 1em;
+  margin: 0.17em 0 0.17em 0;
   color:#666;
   text-align:justify;
 }
@@ -222,7 +222,6 @@ ul li.leaf {
 
 /* blocks*/
 #block-forum-new .content, #block-system-navigation .content {
-  background-color: #DDD;
   padding-top:0.17em;
   padding-bottom:0.17em;
 }
