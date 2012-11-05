@@ -14,18 +14,19 @@ function shadowy7_username($variables) {
   $u_css_class = '';
   $u = user_load($variables['account']->uid);
   // style depends on the role
-  if ($u->uid == 1) {
+  if (!empty($u) && $u->uid == 1) {
     $u_css_class='administrator';
     $u_title=t('Administrator');
   }
-  elseif (in_array('node moderator', array_values($u->roles))) {
+/* TODO roles is an array in D7, with rid as the key and name as the value
+/*  elseif (in_array('node moderator', array_values($u->roles))) {
     $u_css_class='node-moderator';
     $u_title=t('Node moderator');
   }
   elseif (in_array('forum moderator', array_values($u->roles))) {
     $u_css_class='forum-moderator';
     $u_title=t('Forum moderator');
-  }
+  } */
   else {
     $u_css_class='ordinary-user';
     $u_title=t('Ordinary user');
