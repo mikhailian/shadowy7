@@ -3,7 +3,7 @@
 /*$element = array(
   '#tag' => 'link', // The #tag is the html tag - <link />
   '#attributes' => array( // Set up an array of attributes inside the tag
-    'href' => 'http://fonts.googleapis.com/css?family=Ubuntu&subset=latin,cyrillic',
+    'href' => 'https://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic',
     'rel' => 'stylesheet',
     'type' => 'text/css',
   ),

@@ -6,7 +6,7 @@
  * Stark theme itself has no styling, except just enough CSS to arrange the page
  * in a traditional "Header, sidebars, content, and footer" layout.
  *
- * This layout method works reasonably well, but shouldn't be used on a
+ * This layout method works reasonably well, but should not t be used on a
  * production site because it can break. For example, if an over-large image
  * (one that is wider than 20% of the viewport) is in the left sidebar, the
  * image will overlap with the #content to the right.
@@ -88,11 +88,12 @@
   }
 }
 
+
 /* now, we are done with layout, doing design */
 
 /* major structural elements */
-#sidebar-first {
-  text-align:center;
+#sidebar-first, #sidebar-second {
+  top:-1em; /* it's a mistery */
 }
 
 
@@ -115,7 +116,6 @@ p {
 h1, h2 {
   font-size: 1.333em;
   margin: 0.17em 0 0.17em 0;
-  color:#666;
   text-align:justify;
 }
 
@@ -229,7 +229,6 @@ ul li.leaf {
 }
 
 .block .item-list ul {
-  line-height: 150%;
   text-align:left;
 }
 
@@ -242,10 +241,9 @@ ul.menu {
   font-weight: bold;
 /*  font-family: Ubuntu;*/
   font-size: small;
-  line-height: 150%;
 }
 
-.node-wrapper, .comment {
+.node-wrapper, .comment, #forum {
   border: solid 1px #CCC;
   -webkit-box-shadow: 3px 3px 4px #CCC;
   -moz-box-shadow: 3px 3px 4px #ccc;
@@ -369,3 +367,10 @@ ul.action-links li{
   padding-left: 10px;
   text-align: left;
 }
+
+html {
+  font-size: .846em;
+  line-height: 130%;
+}
+
+
