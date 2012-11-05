@@ -365,7 +365,7 @@ ul.action-links li{
     display:inline;
 }
 
-#breadcrumb {
+.breadcrumb {
   padding-left: 10px;
   text-align: left;
 }
