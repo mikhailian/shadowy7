@@ -243,7 +243,7 @@ ul.menu {
   font-size: small;
 }
 
-.node-wrapper, .comment, #forum {
+.node, .comment, #forum {
   border: solid 1px #CCC;
   -webkit-box-shadow: 3px 3px 4px #CCC;
   -moz-box-shadow: 3px 3px 4px #ccc;
@@ -346,7 +346,7 @@ ul.action-links li{
   color:#b922b9;
 }
 
-.field-name-field-image {
+.node .field-name-field-image {
   float:right;
 }
 
