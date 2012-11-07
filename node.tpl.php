@@ -80,7 +80,6 @@
 ?>
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
-  <div class="node-wrapper">
   <?php print $user_picture; ?>
 
   <?php print render($title_prefix); ?>
@@ -106,8 +105,5 @@
 
   <?php print render($content['links']); ?>
 
-  </div><?php /* div class="node-wrapper" */ ?>
-
-  <?php print render($content['comments']); ?>
-
 </div>
+  <?php print render($content['comments']); ?>
