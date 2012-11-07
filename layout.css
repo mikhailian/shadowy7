@@ -93,7 +93,7 @@
 
 /* major structural elements */
 #sidebar-first, #sidebar-second {
-  top:-1em; /* it's a mistery */
+  /* top:-1em; /* it's a mistery */
 }
 
 
@@ -115,6 +115,7 @@ p {
 
 h1, h2 {
   font-size: 1.333em;
+  color:#222;
   margin: 0.17em 0 0.17em 0;
   text-align:justify;
 }
@@ -239,7 +240,6 @@ ul li.leaf {
 
 ul.menu {
   font-weight: bold;
-/*  font-family: Ubuntu;*/
   font-size: small;
 }
 
