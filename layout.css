@@ -375,4 +375,9 @@ html {
 
 .new {
   color: #B72222;
+  -webkit-transform: rotate(-14deg);
+  -moz-transform: rotate(-14deg);
+  -o-transform:rotate(-14deg);
+  -ms-transform:rotate(-14deg);
+  display: inline-block;
 }
