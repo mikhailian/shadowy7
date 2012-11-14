@@ -12,7 +12,7 @@
  * image will overlap with the #content to the right.
  */
 
-@media all and (min-width: 480px) {
+@media all and (max-width: 479px) {
   #content,
   #sidebar-first,
   #sidebar-second {
