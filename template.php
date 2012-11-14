@@ -9,7 +9,21 @@
   ),
 );
 drupal_add_html_head($element, 'google_font_cardo');*/
+/**
+  * <meta name="viewport" content="width=device-width, initial-scale=1" />
+  */
+$viewport = array(
+  '#tag' => 'meta',
+  '#attributes' => array(
+    'name' => 'viewport',
+    'content' => 'width=device-width, initial-scale=1',
+  ),
+);
+drupal_add_html_head($viewport, 'viewport');
 
+/**
+  * TODO
+  */
 function shadowy7_username($variables) {
   $u_css_class = '';
   $u = user_load($variables['account']->uid);
