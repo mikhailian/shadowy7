@@ -411,14 +411,15 @@ td {
 }
 
 blockquote {
-  border-left: 3px solid #B72222;
-  padding-left: 1.17em;
+  border-left: 0.17em solid #ddd;
+  padding-left: 0.33em;
+  margin: 0 0 0 0.33em;
 }
 
 blockquote:before {
-  content: "«";
+  content: "“";
   float: left;
   color: #B72222;
   font-size: xx-large;
-  padding: 0 0.33em 0 0;
+  padding-left: 0.17em;
 }
