@@ -23,6 +23,11 @@
   #content {
     width: 100%;
   }
+  /* hide some table columns*/
+  .views-field-comment-count, .views-field-last-comment-name, .views-field-last-comment-timestamp {
+    display:none;
+    visibility: hidden;
+  }
 }
 
 @media all and (min-width: 480px) and (max-width: 719px) {
@@ -48,6 +53,11 @@
 
   #footer {
     clear: both;
+  }
+  /* hide some table columns*/
+  .views-field-comment-count, .views-field-last-comment-name, .views-field-last-comment-timestamp {
+    display:none;
+    visibility: hidden;
   }
 }
 
@@ -390,4 +400,25 @@ html {
   -o-transform:rotate(-14deg);
   -ms-transform:rotate(-14deg);
   display: inline-block;
+}
+
+tr.even, tr.odd {
+  background-color: none;
+}
+
+td {
+  padding: 0.17em;
+}
+
+blockquote {
+  border-left: 3px solid #B72222;
+  padding-left: 1.17em;
+}
+
+blockquote:before {
+  content: "«";
+  float: left;
+  color: #B72222;
+  font-size: xx-large;
+  padding: 0 0.33em 0 0;
 }
