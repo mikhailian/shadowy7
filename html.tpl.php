@@ -51,18 +51,6 @@
   <title><?php print $head_title; ?></title>
   <?php print $styles; ?>
   <?php print $scripts; ?>
-  <script type="text/javascript">
-  (function() {
-    function async_load(){
-      var protocol = ('https:' == document.location.protocol ? 'https://' : 'http://');
-      var s = document.createElement('script');
-      s.src = protocol + 'blockmetrics.com/static/adblock_detection/js/a.min.js';
-      s.onload = s.onreadystatechange = function(){bm_run('66BB55C02E9C11E2');};
-      var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
-    }
-    jQuery(document).ready(async_load);
-  })();
-  </script>
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
   <div id="skip-link">

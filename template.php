@@ -1,14 +1,14 @@
 <?php
 // First, we must set up an array
-/*$element = array(
+$element = array(
   '#tag' => 'link', // The #tag is the html tag - <link />
   '#attributes' => array( // Set up an array of attributes inside the tag
-    'href' => 'https://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic',
+    'href' => 'https://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic',
     'rel' => 'stylesheet',
     'type' => 'text/css',
   ),
 );
-drupal_add_html_head($element, 'google_font_cardo');*/
+drupal_add_html_head($element, 'google_font_ptsans');
 /**
   * <meta name="viewport" content="width=device-width, initial-scale=1" />
   */

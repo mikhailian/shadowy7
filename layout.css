@@ -98,7 +98,6 @@
   }
 }
 
-
 /* now, we are done with layout, doing design */
 
 /* major structural elements */
@@ -128,6 +127,7 @@ h1, h2 {
   color:#222;
   margin: 0.17em 0 0.17em 0;
   text-align:justify;
+  text-shadow: 1px 1px 1px #ccc;
 }
 
 /* links */
@@ -417,9 +417,9 @@ blockquote {
 }
 
 blockquote:before {
-  content: "“";
+  content: "«";
   float: left;
   color: #B72222;
-  font-size: xx-large;
+  font-size: x-large;
   padding-left: 0.17em;
 }
